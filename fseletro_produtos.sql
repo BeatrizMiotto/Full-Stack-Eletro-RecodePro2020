@@ -40,7 +40,20 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (1,'geladeira','geladeira frost free brastemp side inverse 540 litros',6389.00,5019.00,'imagens/brastemp%20side.jpg'),(2,'geladeira','Geladeira Frost Free Brastemp Branca 375 Litros',2068.60,1910.90,'imagens/branstemp%20branca.webp'),(3,'geladeira','Geladeira Frost Free Consul Prata 340 Litros',2199.90,2069.00,'imagens/geladeira%20consul.webp'),(4,'fogao','Fogão 4 Bocas Consul Inox com Mesa de Vidro',1209.90,1129.00,'imagens/fogao%20consul.jpeg'),(5,'fogao','Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático',609.90,519.70,'imagens/atlas%20fogao.jpg'),(6,'microondas','Micro-ondas Consul 32 Litros Inox 220V',580.90,409.88,'micro%20consul%20inox.webp'),(7,'microondas','Micro-ondas 25L Espelhado Philco 220V',508.70,464.53,'microondas%20philco.webp'),(8,'microondas','Forno de Micro-ondas Eletrolux 20 Litros Branco 220V',459.90,436.05,'micro%20eletrolux.jpeg'),(9,'lavalouca','Lava-Louças Inox com 10 Serviços, 06 Programas de lavagem e Painel Blue Touch',3599.00,2799.90,'imagens/lava%20eletro.webp'),(10,'lavalouca','Lava-Louças Compacta 8 Serviços branca 127V Brastemp',1970.50,1730.61,'imagens/lava%20louca%20brastemp.jpeg'),(11,'lavaroupa','Lavadora de Roupas Brastemp 11kg com Turbo Performance Branca',1699.00,1214.10,'imagens/lavaroupasbrastemp.jpeg'),(12,'lavaroupa','Lavadora de Roupas Philco Inverter 12kg',2399.90,2399.90,'imagens/lavaroupasphilco.jpeg');
+INSERT INTO `produtos` 
+VALUES 
+(1,'geladeira','geladeira frost free brastemp side inverse 540 litros',6389.00,5019.00,'imagens/brastemp%20side.jpg'),
+(2,'geladeira','Geladeira Frost Free Brastemp Branca 375 Litros',2068.60,1910.90,'imagens/branstemp%20branca.webp'),
+(3,'geladeira','Geladeira Frost Free Consul Prata 340 Litros',2199.90,2069.00,'imagens/geladeira%20consul.webp'),
+(4,'fogao','Fogão 4 Bocas Consul Inox com Mesa de Vidro',1209.90,1129.00,'imagens/fogao%20consul.jpeg'),
+(5,'fogao','Fogão de Piso 4 Bocas Atlas Monaco com Acendimento Automático',609.90,519.70,'imagens/atlas%20fogao.jpg'),
+(6,'microondas','Micro-ondas Consul 32 Litros Inox 220V',580.90,409.88,'micro%20consul%20inox.webp'),
+(7,'microondas','Micro-ondas 25L Espelhado Philco 220V',508.70,464.53,'microondas%20philco.webp'),
+(8,'microondas','Forno de Micro-ondas Eletrolux 20 Litros Branco 220V',459.90,436.05,'micro%20eletrolux.jpeg'),
+(9,'lavalouca','Lava-Louças Inox com 10 Serviços, 06 Programas de lavagem e Painel Blue Touch',3599.00,2799.90,'imagens/lava%20eletro.webp'),
+(10,'lavalouca','Lava-Louças Compacta 8 Serviços branca 127V Brastemp',1970.50,1730.61,'imagens/lava%20louca%20brastemp.jpeg'),
+(11,'lavaroupa','Lavadora de Roupas Brastemp 11kg com Turbo Performance Branca',1699.00,1214.10,'imagens/lavaroupasbrastemp.jpeg'),
+(12,'lavaroupa','Lavadora de Roupas Philco Inverter 12kg',2399.90,2399.90,'imagens/lavaroupasphilco.jpeg');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
