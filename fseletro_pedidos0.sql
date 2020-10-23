@@ -41,7 +41,18 @@ CREATE TABLE `pedidos` (
 
 LOCK TABLES `pedidos` WRITE;
 /*!40000 ALTER TABLE `pedidos` DISABLE KEYS */;
-INSERT INTO `pedidos` VALUES (1,'Regina Santos','Rua das Flores, 40','5609-4323','Geladeira Frost Free Brastemp Side Inverse 540 Litros',5019.00,1,5019.00),(2,'João Nunes','Rua Severino Costa, 05','7278-1287','Micro-ondas Consul 32 Litros Inox 220V/Fogão 4 Bocas Consul Inox com Mesa de Vid',409.88,2,1538.88),(3,'Jasmine Kim','Av. Ataliba, 104','4528-6690','Lavadora de Roupas Philco Inverter 12kg',2179.90,1,2179.90),(4,'Ana Rita Silva','Rua São Pedro, 90','2398-4576','Fogão de Piso 4 Bocas Atlas Monaco/Lavadora de Roupas Brastemp 11kg com Turbo Pe',519.70,2,1733.80),(5,'Mariana Andrade','Rua Prado, 23','6509-4356','Forno de Micro-ondas Eletrolux 20 Litros Branco 220V',436.05,1,436.05),(6,'Juliana Melo','Av. Penha Brasil, 249','9832-1254','Lava-Louças Inox com 10 Serviços, 06 Programas de lavagem e Painel Blue Touch',2799.90,1,2799.90),(7,'Rafael Dias','Av. Itaberaba, 780','4309-4512','Lava-Louças Compacta 8 Serviços branca 127V Brastemp',1730.61,1,1730.61),(8,'Sofia Marques','Rua João Crudo, 78','4509-1234','Geladeira Frost Free Consul Prata 340 Litros',2069.00,1,2069.00),(9,'Roberto Silva','Rua Altino, 03','5429-1254','Geladeira Frost Free Brastemp Branca 375 Litros',1910.90,1,1910.90),(10,'Vitor Santos','Rua Expedito, 50','7852-5643','Micro-ondas 25L Espelhado Philco 220V',464.53,1,464.53);
+INSERT INTO `pedidos` 
+VALUES 
+(1,'Regina Santos','Rua das Flores, 40','5609-4323','Geladeira Frost Free Brastemp Side Inverse 540 Litros',5019.00,1,5019.00),
+(2,'João Nunes','Rua Severino Costa, 05','7278-1287','Micro-ondas Consul 32 Litros Inox 220V',409.88,1,409.88),
+(3,'Jasmine Kim','Av. Ataliba, 104','4528-6690','Lavadora de Roupas Philco Inverter 12kg',2179.90,1,2179.90),
+(4,'Ana Rita Silva','Rua São Pedro, 90','2398-4576','Fogão de Piso 4 Bocas Atlas Monaco',519.70,1,519.70),
+(5,'Mariana Andrade','Rua Prado, 23','6509-4356','Forno de Micro-ondas Eletrolux 20 Litros Branco 220V',436.05,1,436.05),
+(6,'Juliana Melo','Av. Penha Brasil, 249','9832-1254','Lava-Louças Inox com 10 Serviços, 06 Programas de lavagem e Painel Blue Touch',2799.90,1,2799.90),
+(7,'Rafael Dias','Av. Itaberaba, 780','4309-4512','Lava-Louças Compacta 8 Serviços branca 127V Brastemp',1730.61,1,1730.61),
+(8,'Sofia Marques','Rua João Crudo, 78','4509-1234','Geladeira Frost Free Consul Prata 340 Litros',2069.00,1,2069.00),
+(9,'Roberto Silva','Rua Altino, 03','5429-1254','Geladeira Frost Free Brastemp Branca 375 Litros',1910.90,1,1910.90),
+(10,'Vitor Santos','Rua Expedito, 50','7852-5643','Micro-ondas 25L Espelhado Philco 220V',464.53,1,464.53);
 /*!40000 ALTER TABLE `pedidos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
