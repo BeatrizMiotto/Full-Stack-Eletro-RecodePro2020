@@ -30,34 +30,37 @@
         <meta charset="UTF-8">
         <title>Pedidos - Full Stack Eletro</title>
         <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
     </head>
     <body>
          <!--Menu-->
         <?php
             include('menu.html');
         ?>
-
-        <h2>Pedidos</h2>
-        <hr>
-        <h3><a href="produtos.php" style="text-decoration: none; color: red;">Voltar</a></h3>
+        <section class="container-fluid">
+            <h2>Pedidos</h2>
+            <hr>
+            <h4><a href="produtos.php" style="text-decoration: none; color: red;">Voltar</a></h4>
+        </section>
         <br><br><br>
 
-        <form class="form" method="post" action="">
-            <h4>Nome: </h4>
-            <input type="text" name="cliente" id="entrada_texto">
-            <h4>Endereço: </h4>
-            <input id="entrada_texto" type="text" name="endereco">
-            <h4>Telefone: </h4>
-            <input id="entrada_texto" type="tel" name="telefone">
-            <h4>Nome do Produto: </h4>
-            <input id="entrada_texto" type="text" name="produto">
-            <h4>Preço: </h4>
-            <input id="entrada_texto" type="text" name="preco">
-            <h4>Quantidade: </h4>
-            <input id="entrada_texto" type="number" name="quantidade">
-            <h4>Preço Total: </h4>
-            <input id="entrada_texto" type="text" name="precototal">
-            <input type="submit" name="submit" value="Enviar">
+        <form class="container form-group-lg" method="post" action="">
+            <label for="nome">Nome:</label>
+            <input class="form-control" type="text" id="nome" name="cliente" placeholder="Nome completo">
+            <label for="end">Endereço:</label>
+            <input class="form-control" id="end" type="text" name="endereco" placeholder="Ex Endereço, Nº">
+            <label for="tele">Telefone:</label>
+            <input class="form-control" id="tele" type="tel" name="telefone" placeholder="Ex 0000-0000">
+            <label for="produ">Nome do Produto:</label>
+            <input class="form-control" id="produ" type="text" name="produto" placeholder="Produto">
+            <label for="pre">Preço:</label>
+            <input class="form-control" id="pre" type="text" name="preco" placeholder="00,00">
+            <label for="quant">Quantidade:</label>
+            <input class="form-control" id="quant" type="number" name="quantidade" placeholder="0">
+            <label for="pretot">Preço Total:</label>
+            <input class="form-control" id="pretot" type="text" name="precototal" placeholder="000,00"><br>
+            <input class="btn btn-sm btn-danger" type="submit" name="submit" value="Enviar">
         </form>
 
 

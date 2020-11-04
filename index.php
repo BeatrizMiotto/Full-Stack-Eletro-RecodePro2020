@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Full Stack Eletro</title>
         <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
     </head>
     <body>
         <!--Menu-->
@@ -12,7 +14,7 @@
         ?>
 
         <br><br><br><br>
-        <main class="texto_inicial">
+        <main class="container-fluid text-center">
             <h1>Seja bem vindo(a)!</h1>
             <p>Aqui em nossa loja, programadores têm desconto nos produtos para sua casa!</p>
         </main>

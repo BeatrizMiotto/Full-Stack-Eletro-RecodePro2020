@@ -18,6 +18,8 @@
         <title>Produtos - Full Stack Eletro</title>
         <link rel="stylesheet" type="text/css" href="./css/estilo.css">
         <script src="func.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
     </head>
     <body>
          <!--Menu-->
@@ -25,14 +27,14 @@
             include('menu.html');
         ?>
 
-        <header>
-            <h2>Produtos</h2>
-            
+        <header class="container-fluid">
+            <h2>Produtos</h2>    
         </header>
         <hr>
         <br><br>
-
+        
         <section class="categorias">
+            <div class="container">
                 <h3>Categorias</h3>
                 <ol>
                     <li onclick="exibir_todos()">Todos (12)</li>
@@ -43,8 +45,9 @@
                     <li onclick="exibir_categoria('lavalouca')">Lava-louças (2)</li>
                     <li><a href="pedido.php" style="text-decoration: none; color: black;">Faça seu pedido</a></li>
                 </ol>
+            </div>
         </section>
-                
+            <tbody class="container">
                 <section class="produtos">
                 <?php
                     $sql = "select * from produtos";
@@ -54,14 +57,16 @@
                         while($rows = $result->fetch_assoc()){
                             
                 ?>
-                <div class="box_produtos" id="<?php echo $rows["categorias"]; ?>" style="display:block;">
-                    <img src="<?php echo $rows["imagens"]; ?> " width="120px" onmousemove="destaque(this)">
-                   <br>
-                   <p class="descricao"><?php echo $rows["descricao"]; ?></p>
-                   <hr>
-                   <p class="descricao"><strike><?php echo $rows["preco"]; ?></strike></p>
-                   <p class="preco"><?php echo $rows["precofinal"]; ?></p>
                 </div>
+                    <div class="box_produtos" id="<?php echo $rows["categorias"]; ?>" style="display:block;">
+                    <img src="<?php echo $rows["imagens"]; ?> " width="120px" onmousemove="destaque(this)">
+                    <br>
+                    <p class="descricao"><?php echo $rows["descricao"]; ?></p>
+                    <hr>
+                    <p class="descricao"><strike><?php echo $rows["preco"]; ?></strike></p>
+                    <p class="preco"><?php echo $rows["precofinal"]; ?></p>
+                    </div>
+              
 
                 <?php
                         }
@@ -70,6 +75,7 @@
                     }
                 ?>
                 </section>
+                </tbody>
                 
 
         <br><br><br><br><br>
